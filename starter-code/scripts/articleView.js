@@ -63,8 +63,8 @@ articleView.setTeasers = function() {
   // Truncate logic to show only first two elements within the article body.
   $('.article-body *:nth-of-type(n+2)').hide();
   $('.read-on').on('click', function() {
-    $('.read-on').parent().find('*').show();
-    $('.read-on').hide();
+    $(this).parent().find('*').show();
+    $(this).hide();
   });
 };
 
